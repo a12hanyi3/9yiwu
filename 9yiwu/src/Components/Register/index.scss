@@ -1,0 +1,116 @@
+.all{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(238, 238, 238);
+    .pageBackground{
+    	background: url(http://m.9yiwu.com/d580da10e27d8de1b0a7b3d074ece72d.png);
+    	background-size: cover;
+    	position: fixed;
+    	top: 0;
+    	left:0;
+    	display: flex;
+    	width: 100%;
+    	height: 100%;
+    	.close{
+    		width: 100%;
+    		height: 10%;
+    		.closes{
+    			display: block;
+    			padding: 0.125rem;
+    			font-size: 0.15rem;
+    			color: #333;
+    			max-height: 100vh;
+                text-decoration: none;
+    		}
+    	}
+    	.logo{
+   			position: fixed;
+   			top: 14vw;
+   			left: 50%;
+   			margin-left: -12vw;
+    		img{
+    			width: 24vw;
+    			height: 24vw;
+    			margin: 11vw auto;
+    			display: block;
+    		}
+    	}
+    	.registerBox{
+    		position: fixed;
+    		top: 60vw;
+    		width: 100%;
+    		.phone{
+    				width: 94%;
+    			    background: hsla(0,0%,100%,.5);
+    			    opacity: .5;
+    			    height: .44rem;
+    			    margin: 0.1rem auto;
+    			    display: flex;
+    			    box-sizing: border-box;
+
+    			    img{
+    			    	width: 0.1325rem;
+    			    	margin: 0.12rem;
+    			    	display: block;
+    			    	float: left;
+    			    }
+    			    input{
+    			    	font-size: .15rem;
+    			    	border: none;
+    			    	background: none;
+    			    	height: 0.24rem;
+    			    	flex: 1;
+    			    	margin: 0.1rem 0.1rem 0.1rem 0;
+    			    	outline: none;
+    			    }
+    		}
+    	}
+    	.agree{
+    		margin-bottom: .2rem;
+    		width: 94%;
+    		margin: 0.2rem auto;
+    		height: 0.2rem;
+    		clear: both;
+    		input{
+    			display: block;
+    			width: 0.15rem;
+    			height: 0.15rem;
+    			margin: 0.05rem;
+    			float: left;
+    		}
+    		span{
+    			float: left;
+    			font-size: .13rem;
+    			color: #333;
+    			margin: 0.03rem;
+    			b{
+    				color: #fc6c26;
+    			}
+    		}
+    	}
+    	.begin{
+    		font-size: .16rem;
+		    border-radius: .045rem;
+		    height: .44rem;
+		    line-height: .44rem;
+		    text-align: center;
+		    color: #fff;
+		    background-color: #fe5400;
+    	}
+    	.backLogin{
+    		position: fixed;
+    		bottom: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 5%;
+    		a{
+    			font-size: .14rem;
+                text-decoration: none;
+                color: #333;
+    		}
+    	}
+    }
+}

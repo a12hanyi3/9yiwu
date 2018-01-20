@@ -1,0 +1,256 @@
+#cart{
+	background: rgb(238,238,238);
+	height: 6.67rem;
+	overflow: hidden;
+	.cartHead{
+		width: 100%;
+		height: 0.49rem;
+		background: #fff;
+		font-size: 0.16rem;
+		line-height: 0.46rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		.edit{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 0.5rem;
+			text-align: center;
+		}
+		.cartName{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.cartContainer{
+		position: relative;
+		top: 0.49rem;
+		height: 5rem;
+		overflow: auto;
+		.cartBox{
+			overflow: hidden;
+			margin-top: 0.1rem;
+			background: #fff;
+			width: 100%;
+			.cartBoxHead{
+				height: 0.44rem;
+				.cartBoxImg{
+				width: 0.50rem;
+				height: 0.44rem;
+				line-height: 0.54rem;
+				text-align: center;
+				float: left;
+				img{
+						width: 0.2rem;
+						height: 0.2rem;
+					}
+				}
+				.cartBoxTitle{
+				float: left;
+				text-align: left;
+				line-height: 0.44rem;
+				font-size: 0.14rem;
+				}
+			}
+			.cartBoxBody{
+				width: 100%;
+				height: 0.825rem;
+				position: relative;
+				display: flex;
+				.cartBoxChoose{
+					line-height: 0.925rem;
+					text-align: center;
+					height: 100%;
+					width: 0.5rem;
+					img{
+						width: 0.2rem;
+						height: 0.2rem;
+					}
+				}
+				.cartBoxDetail{
+					flex: 1;
+					height: 100%;
+					border-top: 0.005rem solid #eee;
+					display: flex;
+					.cartBoxDetailImg{
+						width: 0.6rem;
+						height: 0.6rem;
+						background: #fff;
+						img{
+							display: block;
+							width: 100%;
+							height: auto;
+						}
+					}
+					.cartBoxDetailContent{
+						padding: 0.1rem;
+						flex: 1;
+						flex-direction: column;
+						.cartBoxDetailContentDescribe{
+							display: flex;
+							flex-direction: column;
+							p{
+								width: 65vw;
+								overflow: hidden;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+							}
+							.cartBoxDetailContentDescribeP1{
+								color: #333;
+								font-size: 0.12rem;
+							}
+							.cartBoxDetailContentDescribeP2{
+								color: #828282;
+								font-size: 0.10rem;
+							}
+						}
+						.cartBoxDetailContentPrice{
+							p{
+								margin-top: 0.04rem;
+								font-size: 0.16rem;
+								color: #fe5400;
+							}
+						}
+					}
+				}
+				.cartBoxCount{
+					position: absolute;
+					bottom: 0.075rem;
+					right: 0.1rem;
+					width: 1rem;
+					height: 0.3rem;
+					border:0.005rem solid #eee;
+					border-radius: 0.03rem;
+					display: flex;
+					.cartBoxCountBox1{
+						width: 0.35rem;
+						height: 100%;
+						text-align: center;
+						img{
+							display: block;
+							margin: 40% auto;
+							width: 0.1rem;
+						}
+					}
+					.cartBoxCountBox2{
+						width: 0.3rem;
+						height: 0.3rem;
+						border-left: 0.005rem solid #eee;
+						border-right: 0.005rem solid #eee;
+						text-align: center;
+						line-height: 0.3rem;
+					}
+					.cartBoxCountBox3{
+						width: 0.35rem;
+						height: 100%;
+						text-align: center;
+						img{
+							display: block;
+							margin: 25% auto;
+							width: 0.1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cartContainerDisappear{
+		width: 100%;
+		height: 5.66rem;
+		position: fixed;
+		top: 0.49rem;
+		.emptyBox{
+			width: 100%;
+			height: 100%;
+			.emptyBoxPic{
+				width: 1rem;
+				height: 1rem;
+				margin: 2.33rem auto 0;
+
+				img{
+					width: 100%;
+				}
+			}
+			p{
+				text-align: center;
+				margin-top: .1rem;
+				text-align: center;
+				font-size: .12rem;
+				color: #828282;
+			}
+		}
+	}
+	.cartFoot{
+		width: 100%;
+		height: 0.50rem;
+		background: #f7f7f7;
+		position: fixed;
+		bottom: 0.55rem;
+		.checkAll{
+			float: left;
+			padding: 0 0.04rem;
+			height: 100%;
+			display: flex;
+			.checkAllLeft{
+				width: 0.36rem;
+				height: 100%;
+				.checkAllImg{
+					height: 100%;
+					line-height: 0.60rem;
+					text-align: center;
+					img{
+						width: 0.2rem;
+						height: 0.2rem;
+					}
+				}
+			}
+			.checkAllRight{
+				text-align: center;
+				line-height: 0.50rem;
+				span{
+					font-size: 0.16rem;
+				}
+			}
+		}
+		.statement{
+			width: 2.99rem;
+			height: 0.50rem;
+			float: right;
+			.statementLeft{
+				float: right;
+				background:#bbb;
+				color: #fff;
+				width: 1rem;
+				height: 100%;
+				line-height: 0.50rem;	
+				text-align: center;	
+				span{
+					font-size: 0.16rem;
+				}	
+			}
+			.statementLeftBlink{
+				float: right;
+				background:#fe5400;
+				color: #fff;
+				width: 1rem;
+				height: 100%;
+				line-height: 0.50rem;	
+				text-align: center;	
+				span{
+					font-size: 0.16rem;
+				}	
+			}
+			.statementRight{
+				float: right;
+				padding-right: 0.1rem;
+				text-align: right;
+				line-height: 0.50rem;
+				p{
+					font-size: 0.2rem;
+					color: #fe5400;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+nav{
+	display:flex!important;
+	width:100%;
+	height:0.52rem;
+	position:fixed;
+	bottom:0;
+	background: #fff;
+	li{
+		width:25%;
+		height:100%;
+		text-align: center;
+		font-size: 0.12rem;
+		a{
+			color:#aaa;
+			text-decoration:none;
+			width:100%;
+			height:100%;
+		}
+		span{
+			display:block;
+		}
+		i{
+			display:inline-block;
+			width:0.25rem;
+			height:0.3rem;
+			font-size:0.25rem !important;
+		}
+	}
+}
+.active{
+	color:#fe681f
+}
