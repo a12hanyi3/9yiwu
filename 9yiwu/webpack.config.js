@@ -34,7 +34,12 @@ module.exports = {
                   target: 'http://localhost:3000',
                   host: 'localhost:3000',
                   changeOrigin:true
-              }
+              },
+           '/misc-service/*': {
+                                 target: 'http://m.9yiwu.com',
+                                 host: 'm.9yiwu.com',
+                                 changeOrigin:true
+                             },
         }
         // localshot:8088/v4/api/a.php
         // https://m.maizuo.com/v4/api/a.php
